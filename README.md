@@ -17,7 +17,11 @@ SQLite is self-contained, which means no external dependencies.
                                                                                                                                           The python Sqlite3 standard library is intended for working with databases which provides the sql interface.
                                                                                                                                         
 studentdetails, attendance details, datetime tables are created. The studentdetails table stores the Id,name,rollno, branch,section.     
-Attendace details tables has attendance details for all periods seperately. Datetime table has timestamp of when the attendance was posted of a period. 
+Attendace details tables has attendance details for all periods seperately. Datetime table has timestamp of when the attendance was posted for a particular period. 
+
+### step 2
+
+In this step the student details are entered into the data base. And the images of student are collected using opencv. The images are stored with the name as "student id + count" Example as 1.1,1.2,1.3 .... ,2.1,2.2,2.3....... etc.  
                                                                                                                                           
                                                                                                                                         
 
