@@ -14,7 +14,14 @@ SQLite comes with zero-configuration, which means no setup or administration nee
 A complete SQLite database is stored in a single cross-platform disk file.
 SQLite is very small and light weight, less than 400KiB fully configured or less than 250KiB with optional features omitted.               
 SQLite is self-contained, which means no external dependencies.                                                                             
-                                                                                                                                            The python Sqlite3 standard library is intended for working with databases which provides the sql interface. 
+                                                                                                                                          The python Sqlite3 standard library is intended for working with databases which provides the sql interface.
+                                                                                                                                        
+studentdetails, attendance details, datetime tables are created. The studentdetails table stores the Id,name,rollno, branch,section.     
+Attendace details tables has attendance details for all periods seperately. Datetime table has timestamp of when the attendance was posted of a period. 
+                                                                                                                                          
+                                                                                                                                        
+
+
                                                                                                                                             
 
 
