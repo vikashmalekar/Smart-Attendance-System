@@ -2,10 +2,10 @@
                                                                                                                                            
 From the past few decades Face Recognition technology has made many improvements in the changing world in many areas. Using this face recognition system we can make the process of attendace posting system easy.                                                                                                                                                 
 ## Draw backs with Manual attendace Posting:
---> Time consuming
---> It can be easy to accidentally switch details and end up with false entry of data or in hand written briefings
---> It takes more physical and mental effort to keep track of paper documents, to find information and to keep details correct
---> Lack of security
+--> Time consuming                                                                                                                                                               
+--> It can be easy to accidentally switch details and end up with false entry of data or in hand written briefings                                                               
+--> It takes more physical and mental effort to keep track of paper documents, to find information and to keep details correct                                                   
+--> Lack of security                                                                                                                                                             
 ## Draw backs with
 ## Approach
 ### Step 1
