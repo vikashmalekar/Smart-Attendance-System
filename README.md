@@ -32,7 +32,7 @@ In this step we train the model. Here LBPH_Face_Recognizer is used to recognize 
 In this step the video is captured from the PC cam using opencv. Now each frame of the video is considered as one image and given as input to the LBPH_face_recognizer model.
 If the image is recognized then the attendance is posted in the database with time and period.
 ### Drawbacks:
---> It will fail in case of twins.
+--> It will fail in case of twins.                                                                                                                                               
 --> It gives less accurate results in poor light conditions
                                                                                                                                           
                                                                                                                                         
