@@ -6,9 +6,8 @@ From the past few decades Face Recognition technology has made many improvements
 --> It can be easy to accidentally switch details and end up with false entry of data or in hand written briefings
 --> It takes more physical and mental effort to keep track of paper documents, to find information and to keep details correct
 --> Lack of security
-## Draw backs with 
-
-                                                                                                                                                                                 ## Approach
+## Draw backs with
+## Approach
 ### Step 1
 Collecting all details of the people and updating in the database.                                                                         
 For this purpose Sqlite is used.                                                                                                           
