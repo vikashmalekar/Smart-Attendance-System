@@ -65,7 +65,7 @@ If the image is recognized then the attendance is posted in the database with ti
 - It gives less accurate results in poor light conditions
 
 ### References:
-https://github.com/syamkakarla98/Attendancce-Posting-Using-FaceRecognition
+https://github.com/syamkakarla98/Attendancce-Posting-Using-FaceRecognition                                                                                                       
 https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b
                                                                                                                                           
                                                                                                                                         
