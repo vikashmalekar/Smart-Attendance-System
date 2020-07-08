@@ -63,6 +63,10 @@ If the image is recognized then the attendance is posted in the database with ti
 ### Drawbacks:
 - It will fail in case of twins.                                                                                                                                               
 - It gives less accurate results in poor light conditions
+
+### References:
+https://github.com/syamkakarla98/Attendancce-Posting-Using-FaceRecognition
+https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b
                                                                                                                                           
                                                                                                                                         
 
