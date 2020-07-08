@@ -43,6 +43,7 @@ Each image in the dataset will be in the form of a matrixes of pixels. We we sli
   * Now, the matrix will contain only binary values (ignoring the central value). We need to concatenate each binary value from each position from the matrix line by line into a new binary value (e.g. 10001101). Note: some authors use other approaches to concatenate the binary values (e.g. clockwise direction), but the final result will be the same.
 Then, we convert this binary value to a decimal value and set it to the central value of the matrix, which is actually a pixel from the original image.
 At the end of this procedure (LBP procedure), we have a new image which represents better the characteristics of the original image.
+![image](https://user-images.githubusercontent.com/54492609/86869975-2c3df580-c0f5-11ea-911a-10cf4771892c.png)
 
 ### step 4
 In this step the video is captured from the PC cam using opencv. Now each frame of the video is considered as one image and given as input to the LBPH_face_recognizer model.
