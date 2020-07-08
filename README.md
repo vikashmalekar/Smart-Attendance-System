@@ -61,8 +61,8 @@ We can then use a threshold and the ‘confidence’ to automatically estimate i
 In this step the video is captured from the PC cam using opencv. Now each frame of the video is considered as one image and given as input to the LBPH_face_recognizer model.
 If the image is recognized then the attendance is posted in the database with time and period.
 ### Drawbacks:
---> It will fail in case of twins.                                                                                                                                               
---> It gives less accurate results in poor light conditions
+- It will fail in case of twins.                                                                                                                                               
+- It gives less accurate results in poor light conditions
                                                                                                                                           
                                                                                                                                         
 
