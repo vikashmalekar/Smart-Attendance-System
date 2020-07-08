@@ -47,6 +47,8 @@ At the end of this procedure (LBP procedure), we have a new image which represen
 ##### Extracting Histograms:
 Now, using the image generated in the last step, we can use the Grid X and Grid Y parameters to divide the image into multiple grids, as can be seen in the following image:
 ![image](https://user-images.githubusercontent.com/54492609/86870512-285ea300-c0f6-11ea-9175-961cfcf05819.png)
+As we have an image in grayscale, each histogram (from each grid) will contain only 256 positions (0~255) representing the occurrences of each pixel intensity.
+Then, we need to concatenate each histogram to create a new and bigger histogram. Supposing we have 8x8 grids, we will have 8x8x256=16.384 positions in the final histogram. The final histogram represents the characteristics of the image original image.
 
 ### step 4
 In this step the video is captured from the PC cam using opencv. Now each frame of the video is considered as one image and given as input to the LBPH_face_recognizer model.
