@@ -34,13 +34,13 @@ Local binary pattern is very simple and efficient algorithm used for face recogn
 Lets go deeply process of working of this algorithm.                                                                                                                             
 Each image in the dataset will be in the form of a matrixes of pixels. We we sliding window technique. In this technique we will start from initial postion and take submatrix of size 3x3 and we do LBP operation                                                                                                                                                 
 ##### LBP operation:
-  Suppose we have a facial image in grayscale.
-  We can get part of this image as a window of 3x3 pixels.
-  It can also be represented as a 3x3 matrix containing the intensity of each pixel (0~255).
-  Then, we need to take the central value of the matrix to be used as the threshold.
-  This value will be used to define the new values from the 8 neighbors.
-  For each neighbor of the central value (threshold), we set a new binary value. We set 1 for values equal or higher than the threshold and 0 for values lower than the            threshold.
-Now, the matrix will contain only binary values (ignoring the central value). We need to concatenate each binary value from each position from the matrix line by line into a new binary value (e.g. 10001101). Note: some authors use other approaches to concatenate the binary values (e.g. clockwise direction), but the final result will be the same.
+  * Suppose we have a facial image in grayscale.
+  * We can get part of this image as a window of 3x3 pixels.
+  * It can also be represented as a 3x3 matrix containing the intensity of each pixel (0~255).
+  * Then, we need to take the central value of the matrix to be used as the threshold.
+  * This value will be used to define the new values from the 8 neighbors.
+  * For each neighbor of the central value (threshold), we set a new binary value. We set 1 for values equal or higher than the threshold and 0 for values lower than the             threshold.
+  * Now, the matrix will contain only binary values (ignoring the central value). We need to concatenate each binary value from each position from the matrix line by line into a new binary value (e.g. 10001101). Note: some authors use other approaches to concatenate the binary values (e.g. clockwise direction), but the final result will be the same.
 Then, we convert this binary value to a decimal value and set it to the central value of the matrix, which is actually a pixel from the original image.
 At the end of this procedure (LBP procedure), we have a new image which represents better the characteristics of the original image.
 ### step 4
