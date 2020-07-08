@@ -44,6 +44,8 @@ Each image in the dataset will be in the form of a matrixes of pixels. We we sli
 Then, we convert this binary value to a decimal value and set it to the central value of the matrix, which is actually a pixel from the original image.
 At the end of this procedure (LBP procedure), we have a new image which represents better the characteristics of the original image.
 ![image](https://user-images.githubusercontent.com/54492609/86869975-2c3df580-c0f5-11ea-911a-10cf4771892c.png)
+##### Extracting Histograms:
+Now, using the image generated in the last step, we can use the Grid X and Grid Y parameters to divide the image into multiple grids, as can be seen in the following image:
 
 ### step 4
 In this step the video is captured from the PC cam using opencv. Now each frame of the video is considered as one image and given as input to the LBPH_face_recognizer model.
