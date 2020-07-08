@@ -46,9 +46,16 @@ At the end of this procedure (LBP procedure), we have a new image which represen
 ![image](https://user-images.githubusercontent.com/54492609/86869975-2c3df580-c0f5-11ea-911a-10cf4771892c.png)
 ##### Extracting Histograms:
 Now, using the image generated in the last step, we can use the Grid X and Grid Y parameters to divide the image into multiple grids, as can be seen in the following image:
-![image](https://user-images.githubusercontent.com/54492609/86870512-285ea300-c0f6-11ea-9175-961cfcf05819.png)
+![image](https://user-images.githubusercontent.com/54492609/86870512-285ea300-c0f6-11ea-9175-961cfcf05819.png)                                                                   
 As we have an image in grayscale, each histogram (from each grid) will contain only 256 positions (0~255) representing the occurrences of each pixel intensity.
-Then, we need to concatenate each histogram to create a new and bigger histogram. Supposing we have 8x8 grids, we will have 8x8x256=16.384 positions in the final histogram. The final histogram represents the characteristics of the image original image.
+Then, we need to concatenate each histogram to create a new and bigger histogram. Supposing we have 8x8 grids, we will have 8x8x256=16.384 positions in the final histogram. The final histogram represents the characteristics of the image original image.                                                                                                      
+##### Performing the face recognition: 
+In this step, the algorithm is already trained. Each histogram created is used to represent each image from the training dataset. So, given an input image, we perform the steps again for this new image and creates a histogram which represents the image.
+So to find the image that matches the input image we just need to compare two histograms and return the image with the closest histogram.
+We can use various approaches to compare the histograms (calculate the distance between two histograms), for example: euclidean distance, chi-square, absolute value, etc. In this example, we can use the Euclidean distance (which is quite known) based on the following formula:
+Image for post
+So the algorithm output is the ID from the image with the closest histogram. The algorithm should also return the calculated distance, which can be used as a ‘confidence’ measurement. Note: don’t be fooled about the ‘confidence’ name, as lower confidences are better because it means the distance between the two histograms is closer.
+We can then use a threshold and the ‘confidence’ to automatically estimate if the algorithm has correctly recognized the image. We can assume that the algorithm has successfully recognized if the confidence is lower than the threshold defined.
 
 ### step 4
 In this step the video is captured from the PC cam using opencv. Now each frame of the video is considered as one image and given as input to the LBPH_face_recognizer model.
